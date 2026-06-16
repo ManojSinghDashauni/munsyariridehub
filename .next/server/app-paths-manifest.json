@@ -1,0 +1,8 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
+  "/travel-guide/page": "app/travel-guide/page.js",
+  "/travel-guide/[slug]/page": "app/travel-guide/[slug]/page.js",
+  "/gallery/page": "app/gallery/page.js",
+  "/rentals/[slug]/page": "app/rentals/[slug]/page.js"
+}
