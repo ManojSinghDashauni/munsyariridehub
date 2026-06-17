@@ -1,8 +1,8 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
+  "/best-time/page": "app/best-time/page.js",
+  "/hidden-gems/page": "app/hidden-gems/page.js",
+  "/photography/page": "app/photography/page.js",
+  "/emergency/page": "app/emergency/page.js",
   "/page": "app/page.js",
-  "/travel-guide/page": "app/travel-guide/page.js",
-  "/travel-guide/[slug]/page": "app/travel-guide/[slug]/page.js",
-  "/gallery/page": "app/gallery/page.js",
-  "/rentals/[slug]/page": "app/rentals/[slug]/page.js"
+  "/food-culture/page": "app/food-culture/page.js"
 }

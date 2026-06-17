@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/travel-guide/best-places-to-visit-in-munsiyari":{},"/travel-guide/2-day-munsiyari-itinerary":{},"/travel-guide/bike-rental-guide-munsiyari":{},"/travel-guide/khaliya-top-travel-guide":{},"/travel-guide/panchachuli-travel-guide":{},"/travel-guide/birthi-falls-travel-guide":{},"/rentals/honda-activa-scooty":{},"/rentals/royal-enfield-classic-350":{},"/rentals/royal-enfield-himalayan":{}},"dynamicRoutes":{"/travel-guide/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/travel-guide/[slug]","routeRegex":"^\\/travel\\-guide\\/([^/]+?)(?:\\/)?$","allowHeader":[]},"/rentals/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/rentals/[slug]","routeRegex":"^\\/rentals\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"25bec90a5114e064511d9bf5d581f4a7","previewModeSigningKey":"650b7eac32f403ed3567fd31cdde294687365a764e0784412b8ef3ec9033f78d","previewModeEncryptionKey":"81a62ce09474a19b2fe754b1488eff48ef30236a95f24f4f9a861bf5ba545cdf"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "3c7524f178af3683112513eb0ee4a839",
+    "previewModeSigningKey": "9181c1b9f16ba6d4cd382407f932383cca3c61d2052717fd0385c7f4c16d945e",
+    "previewModeEncryptionKey": "c0ea7a1c29e34c2b12a307cd93366d574b7dbced7b48abf7ffd7ad199d253100"
+  }
+}

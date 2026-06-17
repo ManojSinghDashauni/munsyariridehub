@@ -21,6 +21,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/destinations/page.js"
     ],
+    "/travel-guide/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/travel-guide/page.js"
+    ],
     "/gallery/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -36,25 +41,45 @@
       "static/chunks/main-app.js",
       "static/chunks/app/contact/page.js"
     ],
-    "/travel-guide/page": [
+    "/route-planner/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/travel-guide/page.js"
+      "static/chunks/app/route-planner/page.js"
     ],
-    "/travel-guide/[slug]/page": [
+    "/weather/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/travel-guide/[slug]/page.js"
+      "static/chunks/app/weather/page.js"
     ],
-    "/rentals/[slug]/page": [
+    "/fuel-calculator/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/rentals/[slug]/page.js"
+      "static/chunks/app/fuel-calculator/page.js"
     ],
-    "/_not-found/page": [
+    "/best-time/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/chunks/app/best-time/page.js"
+    ],
+    "/photography/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/photography/page.js"
+    ],
+    "/food-culture/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/food-culture/page.js"
+    ],
+    "/hidden-gems/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/hidden-gems/page.js"
+    ],
+    "/emergency/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/emergency/page.js"
     ]
   }
 }

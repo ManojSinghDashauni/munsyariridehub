@@ -20,7 +20,7 @@ const links = [
   { to: "/gallery", label: "Gallery" },
   { to: "/about", label: "About Us" },
   { to: "/contact", label: "Contact" },
-]; s
+];
 
 export const toolLinks = [
   { to: "/route-planner", label: "Route Planner" },
