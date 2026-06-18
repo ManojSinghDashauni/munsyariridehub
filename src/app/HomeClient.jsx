@@ -3,8 +3,11 @@
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
+
+import { FaWhatsapp } from "react-icons/fa";
+
 import {
-  MessageCircle, Star, MapPin, ShieldCheck, IndianRupee, Wrench, Clock,
+  Star, MapPin, ShieldCheck, IndianRupee, Wrench, Clock,
   Zap, Award, ArrowRight, Quote, ChevronDown,
 } from "lucide-react";
 import heroImg from "@/assets/hero-mountain.jpg";
@@ -97,7 +100,7 @@ export default function HomeClient() {
           >
             <Button asChild variant="whatsapp" size="xl">
               <a href={whatsappLink(bookingMessage())} target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="h-5 w-5" /> Book on WhatsApp
+                <FaWhatsapp className="h-5 w-5" /> Book on WhatsApp
               </a>
             </Button>
             <Button asChild size="xl" variant="outline" className="border-white/60 bg-white/10 text-white backdrop-blur hover:bg-white/20 hover:text-white">
@@ -166,7 +169,7 @@ export default function HomeClient() {
           </Reveal>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {vehicles.map((v, i) => (
-              <Reveal key={v.slug} delay={i * 0.05}>
+              <Reveal key={v.slug+v.color} delay={i * 0.05}>
                 <VehicleCard vehicle={v} />
               </Reveal>
             ))}
@@ -251,7 +254,7 @@ export default function HomeClient() {
             </p>
             <Button asChild variant="whatsapp" size="xl" className="mt-6">
               <a href={whatsappLink(bookingMessage())} target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="h-5 w-5" /> Book on WhatsApp Now
+                <FaWhatsapp className="h-5 w-5" /> Book on WhatsApp Now
               </a>
             </Button>
           </Reveal>
@@ -337,7 +340,7 @@ function CostCalculator() {
               </SelectTrigger>
               <SelectContent>
                 {vehicles.map((v) => (
-                  <SelectItem key={v.slug} value={v.slug}>
+                  <SelectItem key={v.slug+v.color} value={v.slug}>
                     {v.name} — ₹{v.pricePerDay}/day
                   </SelectItem>
                 ))}
@@ -382,7 +385,7 @@ function CostCalculator() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <MessageCircle className="h-4 w-4" /> Book this on WhatsApp
+                <FaWhatsapp className="h-4 w-4" /> Book this on WhatsApp
               </a>
             </Button>
           </div>

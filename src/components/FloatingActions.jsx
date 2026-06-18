@@ -2,9 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MessageCircle, Phone, Navigation, X } from "lucide-react";
+import { Phone, Navigation, X } from "lucide-react";
 import { SITE, whatsappLink, bookingMessage } from "@/lib/site";
 import { Button } from "@/components/ui/button";
+
+import { FaWhatsapp } from "react-icons/fa";
 
 export function FloatingActions() {
   return (
@@ -41,7 +43,7 @@ export function FloatingActions() {
         aria-label="Book on WhatsApp"
         className="flex items-center gap-2 rounded-full bg-[oklch(0.62_0.17_150)] px-4 py-3 font-medium text-white shadow-xl hover:-translate-y-0.5 transition-transform"
       >
-        <MessageCircle className="h-5 w-5" />
+        <FaWhatsapp className="h-5 w-5" />
         <span className="hidden text-sm sm:inline">Book Now</span>
         <span className="absolute -right-0.5 -top-0.5 h-3 w-3 animate-ping rounded-full bg-[oklch(0.62_0.17_150)]" />
       </motion.a>
@@ -98,7 +100,7 @@ export function ExitIntent() {
             </p>
             <Button asChild variant="whatsapp" size="lg" className="mt-5 w-full">
               <a href={whatsappLink(bookingMessage())} target="_blank" rel="noopener noreferrer" onClick={close}>
-                <MessageCircle className="h-5 w-5" /> Chat on WhatsApp
+                <FaWhatsapp className="h-5 w-5" /> Chat on WhatsApp
               </a>
             </Button>
           </motion.div>

@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { MessageCircle, IndianRupee, ArrowRight } from "lucide-react";
+import {IndianRupee, ArrowRight } from "lucide-react";
 import { whatsappLink, bookingMessage } from "@/lib/site";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+
+import { FaWhatsapp } from "react-icons/fa";
 
 export function VehicleCard({ vehicle }) {
   return (
@@ -56,7 +58,7 @@ export function VehicleCard({ vehicle }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <MessageCircle className="h-4 w-4" /> Book on WhatsApp
+            <FaWhatsapp className="h-4 w-4" /> Book on WhatsApp
           </a>
         </Button>
       </div>

@@ -4,13 +4,15 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Moon, Sun, MessageCircle, Mountain, ChevronDown } from "lucide-react";
+import { Menu, X, Moon, Sun, Mountain, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useTheme } from "@/components/theme";
 import { whatsappLink, bookingMessage } from "@/lib/site";
+
+import { FaWhatsapp } from "react-icons/fa";
 
 const links = [
   { to: "/", label: "Home" },
@@ -112,7 +114,7 @@ export function Navbar() {
           </Button>
           <Button asChild variant="whatsapp" size="sm" className="hidden sm:inline-flex">
             <a href={whatsappLink(bookingMessage())} target="_blank" rel="noopener noreferrer">
-              <MessageCircle className="h-4 w-4" /> Book on WhatsApp
+              <FaWhatsapp className="h-4 w-4" /> Book on WhatsApp
             </a>
           </Button>
           <Button
@@ -157,7 +159,7 @@ export function Navbar() {
               ))}
               <Button asChild variant="whatsapp" className="mt-2">
                 <a href={whatsappLink(bookingMessage())} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="h-4 w-4" /> Book on WhatsApp
+                  <FaWhatsapp className="h-4 w-4" /> Book on WhatsApp
                 </a>
               </Button>
             </div>

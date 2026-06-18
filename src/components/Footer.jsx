@@ -1,6 +1,8 @@
 import Link from "next/link";
-import { Mountain, MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
+import { Mountain, MapPin, Phone, Mail, Clock } from "lucide-react";
 import { SITE, whatsappLink, bookingMessage } from "@/lib/site";
+
+import { FaWhatsapp } from "react-icons/fa";
 
 export function Footer() {
   return (
@@ -54,7 +56,7 @@ export function Footer() {
             rel="noopener noreferrer"
             className="mt-4 inline-flex items-center gap-2 rounded-md bg-[oklch(0.62_0.17_150)] px-4 py-2.5 text-sm font-medium text-white shadow hover:brightness-105"
           >
-            <MessageCircle className="h-4 w-4" /> Book on WhatsApp
+            <FaWhatsapp className="size-6" /> Book on WhatsApp
           </a>
         </div>
       </div>

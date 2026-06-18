@@ -1,7 +1,8 @@
-import { MessageCircle, Phone, MapPin, Mail, Clock, Navigation } from "lucide-react";
+import { Phone, MapPin, Mail, Clock, Navigation } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PageHeader } from "@/components/PageHeader";
 import { Reveal } from "@/components/motion";
+import { FaWhatsapp } from "react-icons/fa";
 import { SITE, whatsappLink, bookingMessage } from "@/lib/site";
 
 export const metadata = {
@@ -26,7 +27,7 @@ export default function Page() {
           <Reveal>
             <div className="space-y-4">
               {[
-                { icon: MessageCircle, label: "WhatsApp", value: SITE.phone, href: whatsappLink(bookingMessage()) },
+                { icon: FaWhatsapp, label: "WhatsApp", value: SITE.whatsapp, href: whatsappLink(bookingMessage()) },
                 { icon: Phone, label: "Call", value: SITE.phone, href: `tel:${SITE.phone}` },
                 { icon: Mail, label: "Email", value: SITE.email, href: `mailto:${SITE.email}` },
                 { icon: MapPin, label: "Address", value: SITE.address, href: SITE.mapsDirections },
@@ -43,9 +44,9 @@ export default function Page() {
               ))}
               <div className="flex flex-wrap gap-3 pt-2">
                 <Button asChild variant="whatsapp" size="lg">
-                  <a href={whatsappLink(bookingMessage())} target="_blank" rel="noopener noreferrer"><MessageCircle className="h-5 w-5" /> WhatsApp</a>
+                  <a href={whatsappLink(bookingMessage())} target="_blank" rel="noopener noreferrer"><FaWhatsapp className="h-5 w-5" /> WhatsApp</a>
                 </Button>
-                <Button asChild variant="outline" size="lg"><a href={`tel:${SITE.phone}`}><Phone className="h-5 w-5" /> Call</a></Button>
+                <Button asChild variant="outline" size="lg"><a href={`tel:${SITE.phone}`}><Phone className="size-5" /> Call</a></Button>
                 <Button asChild variant="outline" size="lg"><a href={SITE.mapsDirections} target="_blank" rel="noopener noreferrer"><Navigation className="h-5 w-5" /> Directions</a></Button>
               </div>
             </div>
